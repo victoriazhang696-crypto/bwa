@@ -14,7 +14,7 @@ except ImportError:
 genai.configure(api_key=st.secrets["GEMINI_API_KEY"])
 
 # 使用全免费且速度极快的 Gemini 1.5 Flash 引擎
-model = genai.GenerativeModel('gemini-2.0-flash')
+model = genai.GenerativeModel('gemini-1.0-pro')
 
 # --- 2. 精美的前端 UI 包装（BMA 专属品牌定制） ---
 st.set_page_config(page_title="BMA 价值投资操作系统", layout="centered")
