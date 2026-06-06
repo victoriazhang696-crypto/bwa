@@ -11,7 +11,7 @@ except ImportError:
 # --- 1. 核心安全配置：把你的免费 API Key 锁在后台 ---
 # 请将你在 Google AI Studio 申请的那一长串 API Key 替换掉下面的 "这里换成你的API_KEY"
 # 比如：genai.configure(api_key="AIzaSyA1...")
-genai.configure(api_key="AQ.Ab8RN6J_lWaJz6VQMlMppci2RCat5Be85XHdZ6Pw1eTNFGSf5g")
+genai.configure(api_key="genai.configure(api_key=st.secrets["GEMINI_API_KEY"])")
 
 # 使用全免费且速度极快的 Gemini 1.5 Flash 引擎
 model = genai.GenerativeModel('gemini-1.5-flash')
